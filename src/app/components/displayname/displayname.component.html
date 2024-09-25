@@ -1,0 +1,13 @@
+<br> <!-- User can able to input their names-->
+<input type="text" [(ngModel)]="user" placeholder="Enter your name" />
+
+<!--
+Button when it click it triggere the input text
+-->
+<button (click)="showName()">Display Name</button>
+
+<!--
+the value of displayName will shown once the button trigger
+-->
+<p *ngIf="TriggerDisplay">Hello, {{ TriggerDisplay }}!</p>
+
