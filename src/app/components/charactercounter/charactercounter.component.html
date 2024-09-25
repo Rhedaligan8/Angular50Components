@@ -1,0 +1,8 @@
+<div><br>
+    <h2>Character Counter</h2><br>
+    <textarea [(ngModel)]="inputString" (input)="countCharacters()" placeholder="Type your text here..."></textarea>
+    <div *ngIf="characterCount >= 0">
+      <p>Character Count: {{ characterCount }}</p>
+    </div>
+  </div>
+  
