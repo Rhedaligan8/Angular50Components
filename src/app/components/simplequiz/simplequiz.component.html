@@ -1,0 +1,16 @@
+<div>
+    <h2>Quiz ni Rhed pero isa lang</h2>
+  
+    <p>{{ question.question }}</p> <!-- ito ay tawag na data binding-->
+  
+    <!-- Display the multiple choice options as buttons -->
+    <div *ngFor="let option of question.options">
+      <button (click)="selectAnswer(option)">{{ option }}</button>
+    </div>
+  
+    <!-- ang variable na result gumamit ako ng *ngIf for true or false -->
+    <div *ngIf="result">
+      <p *ngIf="result !== null">Ang "{{ selectedAnswer }}", ay {{ result }}</p>
+    </div>
+  </div>
+  
