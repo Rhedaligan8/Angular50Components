@@ -1,0 +1,7 @@
+<br>
+<div>
+    <input type="text" [(ngModel)]="name" placeholder="Enter your name" />
+    <button (click)="displayUppercaseName()">Submit</button>
+    <p *ngIf="uppercaseName">Oops, {{ uppercaseName }}!</p>
+  </div>
+  
