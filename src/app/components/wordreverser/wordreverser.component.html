@@ -1,0 +1,9 @@
+<!-- Input field for the word to be reversed -->
+<label for="inputWord">Enter a word:</label><br>
+<input type="text" id="inputWord" [(ngModel)]="inputWord" placeholder="Enter a word" /><br>
+
+<!-- Button to trigger the word reversal -->
+<button (click)="reverseWord()">Reverse Word</button>
+
+<!-- Display the reversed word -->
+<p *ngIf="reversedWord">Reversed Word: {{ reversedWord }}</p>
