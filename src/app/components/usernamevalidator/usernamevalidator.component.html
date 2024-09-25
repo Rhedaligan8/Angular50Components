@@ -1,0 +1,8 @@
+<div>
+    <input type="text" [(ngModel)]="username" placeholder="Enter username" />
+    <button (click)="validateUsername()">Validate</button>
+    <p *ngIf="isValid !== null">
+      Username is {{ isValid ? 'valid' : 'invalid' }}.
+    </p>
+  </div>
+  
