@@ -1,0 +1,15 @@
+<div><br>
+    <h2>Bookmark List</h2><br>
+    <input type="text" [(ngModel)]="url" placeholder="Enter URL" />
+    <button (click)="addBookmark()">Add Bookmark</button>
+  
+    <div *ngIf="bookmarks.length">
+      <h3>Your Bookmarks</h3>
+      <ul>
+        <li *ngFor="let bookmark of bookmarks">
+          <a [href]="bookmark" target="_blank">{{ bookmark }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
