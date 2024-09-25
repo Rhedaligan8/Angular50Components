@@ -1,0 +1,14 @@
+<div>
+    <h2>Temperature Converter</h2>
+    <div>
+      <label for="celsius">Celsius:</label>
+      <input type="number" id="celsius" [(ngModel)]="celsius" (input)="convertToFahrenheit()" placeholder="°C" />
+      <span *ngIf="fahrenheit !== null">= {{ fahrenheit | number: '1.1-1' }} °F</span>
+    </div>
+    <div>
+      <label for="fahrenheit">Fahrenheit:</label>
+      <input type="number" id="fahrenheit" [(ngModel)]="fahrenheit" (input)="convertToCelsius()" placeholder="°F" />
+      <span *ngIf="celsius !== null">= {{ celsius | number: '1.1-1' }} °C</span>
+    </div>
+  </div>
+  
