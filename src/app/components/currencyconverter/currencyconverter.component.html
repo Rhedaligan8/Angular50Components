@@ -1,0 +1,10 @@
+<!-- Input field for the amount in USD -->
+<label for="dollar">Enter amount in Dollar:</label>
+<input type="number" id="dollar" [(ngModel)]="Dollar" placeholder="Enter amount in Dollar" />
+
+<!-- Button for conversion -->
+<button (click)="Convert()">Convert to Pesos</button>
+
+<!-- show the converted amount in Pesos -->
+<p *ngIf="Pesos !== null">The equivalent amount in PHP is: {{ Pesos | number:'1.2-2' }}</p>
+
