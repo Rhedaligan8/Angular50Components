@@ -1,0 +1,13 @@
+<div>
+  <h2>Select a Color</h2>
+
+  <div>
+    <button (click)="onSelectColor('Red #FF0000')">Red</button>
+    <button (click)="onSelectColor('Green #00FF00')">Green</button>
+    <button (click)="onSelectColor('Blue #0000FF')">Blue</button>
+  </div>
+
+  <div>
+    <p>Selected Color: {{ selectedColor }}</p>
+  </div>
+</div>
