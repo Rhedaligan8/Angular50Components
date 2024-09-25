@@ -1,0 +1,22 @@
+<!-- Form with name and email inputs --><br>
+<form (ngSubmit)="Submitname()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="formData.name" name="name" required />
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="formData.email" name="email" required />
+  
+    <!-- Button for submit -->
+    <button type="submit">Submit</button>
+  </form>
+  
+  <!-- Display the submitted data -->
+  <div *ngIf="Submit">
+    <h3>Submitted Data:</h3>
+    <p>Name: {{ Submit.name }}</p>
+    <p>Email: {{ Submit.email }}</p>
+  </div>
+
+
+
+  
