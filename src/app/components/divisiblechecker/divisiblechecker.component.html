@@ -1,0 +1,10 @@
+<div>
+    <input type="number" [(ngModel)]="number1" placeholder="Enter first number" />
+    <input type="number" [(ngModel)]="number2" placeholder="Enter second number" />
+    <button (click)="checkDivisibility()">Check Divisibility</button>
+    
+    <p *ngIf="isDivisible !== null">
+      {{ number1 }} is {{ isDivisible ? '' : 'not ' }}divisible by {{ number2 }}.
+    </p>
+  </div>
+  
