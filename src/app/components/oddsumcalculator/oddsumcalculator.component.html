@@ -1,0 +1,9 @@
+<br>
+<div>
+    <input type="number" [(ngModel)]="number" placeholder="Enter a number" />
+    
+    <button (click)="calculateOddSum()">Calculate Odd Sum</button>
+    
+    <p *ngIf="oddSum !== null">Sum of odd numbers up to {{ number }}: {{ oddSum }}</p>
+  </div>
+  
