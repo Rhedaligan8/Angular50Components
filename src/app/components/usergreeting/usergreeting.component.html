@@ -1,0 +1,11 @@
+<br><br>
+
+<label for="userName">Enter your name:</label>
+<input type="text" id="userName" [(ngModel)]="user" placeholder="Enter your name" />
+
+<!-- Button to trigger the greeting display -->
+<button (click)="GreetingsName()">Greet Me</button>
+
+<!-- Display the personalized greeting -->
+<p *ngIf="greets">{{ greets }}</p>
+
