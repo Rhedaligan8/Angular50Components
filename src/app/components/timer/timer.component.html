@@ -1,0 +1,15 @@
+<div>
+    <h2>Countdown Timer</h2>
+    
+    <button (click)="startTimer(1)">1 Minute</button>
+    <button (click)="startTimer(5)">5 Minutes</button>
+    <button (click)="startTimer(10)">10 Minutes</button>
+  
+    <!-- Display the countdown message -->
+    <p *ngIf="countdownMessage">{{ countdownMessage }}</p>
+    
+    <!-- Display time left -->
+    <p *ngIf="countdown > 0">Time left: {{ countdown }} seconds</p>
+    <p *ngIf="countdown === 0">Time is up!</p>
+  </div>
+  
