@@ -1,0 +1,19 @@
+<div>
+    <h2>Contact List</h2>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="name" />
+    
+    <label for="phone"><br>Phone Number:</label>
+    <input type="text" id="phone" [(ngModel)]="phoneNumber" />
+    
+    <button (click)="addContact()">Add Contact</button>
+    
+    <h3>Contact List:</h3>
+    <ul>
+      <li *ngFor="let contact of contacts">
+        {{ contact.name }} - {{ contact.phone }}
+      </li>
+    </ul>
+  </div>
+  
