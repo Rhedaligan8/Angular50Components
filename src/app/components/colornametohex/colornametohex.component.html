@@ -1,0 +1,10 @@
+<div>
+    <h2>Color Name to Hex Converter</h2>
+    
+    <label for="colorName">Enter a color name:</label>
+    <input type="text" id="colorName" [(ngModel)]="colorName" />
+    <button (click)="convertColorNameToHex()">Convert</button>
+    
+    <p *ngIf="hexValue">Hexadecimal Value: {{ hexValue }}</p>
+  </div>
+  
