@@ -18,4 +18,5 @@ export class CompoundinterestcalculatorComponent {
       this.compoundInterest = amount - this.principal;
     }
   }
+
 }
